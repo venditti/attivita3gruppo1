@@ -6,8 +6,9 @@ function funzioneLogin()
 {
     var nome=document.forms["formDati"]["nome"].value;
     var cognome=document.forms["formDati"]["cognome"].value;
+    var username=document.forms["formDati"]["username"].value;
     var passwordx=document.forms["formDati"]["passwordx"].value;
-    if(passwordx="alternanza73")
+    if(username=="admin" && passwordx=="alternanza73")
     document.write("Benvenuto " + nome + " " + cognome);
     else
     document.write("Utente non autorizzato");
@@ -21,6 +22,9 @@ Nome <input name="nome" type="text"/>
 <br>
 <br>
 Cognome <input name="cognome" type="text"/>
+<br>
+<br>
+username <input name="username" type="text"/>
 <br>
 <br>
 password <input name="passwordx" type="text"/>
